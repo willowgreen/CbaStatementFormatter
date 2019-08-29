@@ -1,5 +1,11 @@
-// CbaStatementFormatter.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+ CbaStatementFormatter
+ Version 1.0
+ --------------------------------
+ Copyright 2019, Willowgreen Group Pty Limited ABN 83 629 424 862 LEI 254900RD2A6LV44ZYE61
+ --------------------------------
+ Licensed under Willowgreen Internal License 2.0
+*/
 
 #include <iterator>
 #include <iostream>
