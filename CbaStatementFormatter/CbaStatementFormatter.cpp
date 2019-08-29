@@ -27,11 +27,9 @@ std::vector<std::string> getNextLineAndSplitIntoTokens(std::istream& str)
 	{
 		result.push_back(cell);
 	}
-	// This checks for a trailing comma with no data after it.
-	if (!lineStream && cell.empty())
+	if (!lineStream && cell.empty()) // checks for trailing commas with no data afterwards
 	{
-		// If there was a trailing comma then add an empty element.
-		result.push_back("");
+		result.push_back(""); // if trailing comma, add empty element
 	}
 	return result;
 }
@@ -60,11 +58,9 @@ public:
 		{
 			m_data.push_back(cell);
 		}
-		// This checks for a trailing comma with no data after it.
-		if (!lineStream && cell.empty())
+		if (!lineStream && cell.empty()) // checks for trailing commas with no data afterwards
 		{
-			// If there was a trailing comma then add an empty element.
-			m_data.push_back("");
+			m_data.push_back(""); // if trailing comma, add empty element
 		}
 	}
 private:
