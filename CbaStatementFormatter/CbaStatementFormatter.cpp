@@ -117,9 +117,7 @@ int main(int argc, char* argv[]) {
 			rowc++;
 		}
 		outFile.close();
-
-		system("pause");
 	}
 	else std::cerr << "Unable to open " + outFilename;
-
+	system("pause");
 }
