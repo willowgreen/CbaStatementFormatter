@@ -118,6 +118,8 @@ int main(int argc, char* argv[]) {
 		}
 		outFile.close();
 	}
-	else std::cerr << "Unable to open " + outFilename;
-	system("pause");
+	else {
+		std::cerr << "Unable to open " + outFilename;
+		system("pause");
+	}
 }
